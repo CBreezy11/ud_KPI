@@ -63,22 +63,22 @@ class ReadXlsx():
                             if y is not None:
                                     if "_32" in y:
                                             master_list[i]['32'] += master_list[i][y]
-                                    elif "16" in y:
+                                    if "16" in y:
                                             master_list[i]['16'] += master_list[i][y]
                                     #elif "LEVEL UP" in y:
                                             #sumCocktail += master_list[i][y]
                                     #elif "SQUAD UP" in y:
                                             #sumCocktail += master_list[i][y]
-                                    elif "tito" in str(y).lower():
+                                    if "tito" in str(y).lower():
                                             master_list[i]['VP'] += master_list[i][y]
-                                            master_list[i]['vodka'] += master_list[i][y]
-                                    elif "goose" in str(y).lower():
+                                            #master_list[i]['vodka'] += master_list[i][y]
+                                    if "goose" in str(y).lower():
                                             master_list[i]['VP'] += master_list[i][y]
-                                            master_list[i]['vodka'] += master_list[i][y]
-                                    elif "sky" in str(y).lower():
+                                            #master_list[i]['vodka'] += master_list[i][y]
+                                    if "sky" in str(y).lower():
                                             master_list[i]['well'] += master_list[i][y]
-                                            master_list[i]['vodka'] += master_list[i][y]
-                                    elif "vodka" in str(y).lower():
+                                            #master_list[i]['vodka'] += master_list[i][y]
+                                    if "Vodka" in str(y).lower():
                                             master_list[i]['vodka'] += master_list[i][y]
                     i += 1
 
